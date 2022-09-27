@@ -1,0 +1,227 @@
+:root {
+    --clr-white: #fff;
+    --clr-text-light: #fff;
+    --clr-light: #f2f2f2;
+    --clr-dark: #111517;
+    --clr-text-dark: #111517;
+    --font-size: 14px;
+    --font-weight: 600;
+    --secondary-font-size: 18px;
+    --font-family: "Nunito Sans";
+    --logo-fill: var(--clr-dark);
+    --clr-bg-100: #2B3844;
+    --clr-bg-200: #202C36;
+    --clr-primary-bg: var(--clr-light);
+    --clr-bg-header: var(--clr-white);
+    --clr-dark-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0562443);
+    --clr-light-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0562443);
+    --header-shadow: var(--clr-light-shadow);
+    --header-color: var(--clr-dark);
+    --card-bg: var(--clr-white);
+    --input-color: var(--clr-white);
+}
+
+/* nunito-sans-regular - latin */
+@font-face {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+        url('../fonts/nunito-sans-v12-latin-regular.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/nunito-sans-v12-latin-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* nunito-sans-600 - latin */
+@font-face {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: local(''),
+        url('../fonts/nunito-sans-v12-latin-600.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/nunito-sans-v12-latin-600.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* nunito-sans-700 - latin */
+@font-face {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+        url('../fonts/nunito-sans-v12-latin-700.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/nunito-sans-v12-latin-700.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* nunito-sans-800 - latin */
+@font-face {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 800;
+    src: local(''),
+        url('../fonts/nunito-sans-v12-latin-800.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/nunito-sans-v12-latin-800.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 800;
+}
+
+img {
+    display: block;
+}
+
+body {
+    margin: 0;
+    font-size: var(--font-size);
+    font-family: var(--font-family);
+    font-weight: var(--font-weight);
+    background-color: var(--clr-primary-bg) !important;
+}
+
+.dark {
+    --clr-primary-bg: var(--clr-bg-200);
+    --logo-fill: var(--clr-white) !important;
+    --clr-bg-header: var(--clr-bg-100);
+    --header-color: var(--clr-white);
+    --header-shadow: var(--clr-dark-shadow) !important;
+    --card-bg: var(--clr-bg-100);
+    --card-color: var(--clr-white);
+    --input-color: var(--clr-bg-200);
+}
+
+.dark input,
+.dark input::placeholder {
+    color: white !important;
+}
+
+.dark select,
+.dark select::marker {
+    color: white !important;
+}
+
+
+ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.container {
+    width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.text-white {
+    color: var(--clr-white);
+}
+
+.text-dark {
+    color: var(--clr-dark);
+}
+
+.site-header {
+    background-color: var(--clr-bg-header);
+    box-shadow: var(--header-shadow);
+}
+
+.site-link {
+    color: var(--logo-fill) !important;
+}
+
+.header-btn {
+    padding-left: 25px !important;
+    background-image: url("../images/Group\ 3.svg");
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: 0% center;
+    color: var(--header-color) !important;
+}
+
+.header-btn:hover {
+    border-color: transparent !important;
+}
+
+.countries-section {
+    padding-top: 48px;
+    padding-bottom: 45px;
+}
+
+
+
+.countries-search-input {
+    width: 480px;
+    padding-left: 48px !important;
+    border: none;
+    outline: none !important;
+    box-shadow: 0px 2px 9px #0000000e !important;
+    background-image: url("../images/search.svg");
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+    background-position: 5% center;
+}
+
+.countries-search-input:focus {
+    box-shadow: 0 0 2px 0.5px var(--clr-dark) !important;
+}
+
+.countries-search-input::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #848484;
+}
+
+input,
+select {
+    background-color: var(--input-color) !important;
+}
+
+.user-region,
+.user-option {
+    background-image: url("../images/arrow.svg");
+    background-size: 12px 12px;
+    background-position: right 10% center;
+    background-repeat: no-repeat;
+    appearance: none;
+    box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
+    border: none;
+    outline: none;
+}
+
+.user-region:focus {
+    box-shadow: 0 0 2px 0.5px var(--clr-dark);
+}
+
+
+
+.country-item {
+    height: 100% !important;
+    box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.0294384);
+}
+
+.country-item-title {
+    margin-left: 30px;
+}
+
+.card {
+    /* height: 320px !important; */
+    color: var(--card-color) !important;
+    background-color: var(--card-bg) !important;
+}
